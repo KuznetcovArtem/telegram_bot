@@ -29,7 +29,7 @@ class Converter:
 
         url = f"https://api.apilayer.com/exchangerates_data/convert?to={base_key}&from={quote_key}&amount={amount}"
 
-        headers = {"apikey": "***********"}
+        headers = {"apikey": "***********"} # Вместо '*************' ввести ApiKey от https://exchangeratesapi.io
         response = requests.request("GET", url, headers=headers)
         total_base = json.loads(response.content)['result']
         text = f'Стоимость {amount} {quote} в {base} - {total_base}'
