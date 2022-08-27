@@ -27,7 +27,6 @@ class Converter:
         except ValueError:
             raise ApiException(f'Не удалось обработать количество {amount}!')
 
-        # url = f"https://api.apilayer.com/exchangerates_data/convert?to={exchanges[base]}&from={exchanges[quote]}&amount={amount}"
         url = f"https://api.apilayer.com/exchangerates_data/convert?to={base_key}&from={quote_key}&amount={amount}"
 
         headers = {"apikey": "***********"}
