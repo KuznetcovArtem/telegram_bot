@@ -6,4 +6,4 @@ exchanges = {
     'бат': 'THB'
 }
 
-TOKEN = '***********'
+TOKEN = '***********' # Вместо '*************' ввести ApiKey от Telagram_bot полученный для своего бота в BotFather
